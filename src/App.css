@@ -1,44 +1,79 @@
-.App {
-  text-align: center;
-  background-color: rgb(40, 35, 52);
+body{
+  background-color: #313131;
 }
 
-.App{
-  margin:0%;
-}
+button.slick-prev{
 
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  font-size: 0px;
+  border: none;    
+  width: 75px;
+  height: 75px;
+  z-index: 9;
+  background-color: transparent;
+  position: absolute;
+  background-image: url('../src/componentes/imgs/istockphoto-1155706702-612x612.jpg');
+  top: 35%;
+  left: 5%;
   }
-}
 
-.App-header {
-  background-color: #1256dd;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: rgb(172, 12, 12);
-}
+  button.slick-next{
 
-.App-link {
-  color: #61dafb;
-}
+      font-size: 0px;
+      border: none;    
+      width: 75px;
+      height: 75px;
+      z-index: 9;
+      background-color: transparent;
+      position: absolute;
+      background-image: url('');
+      top: 35%;
+      right: 5%;
+      }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+      button.slick-next{
+
+          font-size: 0px;
+          border: none;    
+          width: 75px;
+          height: 75px;
+          z-index: 9;
+          background-color: transparent;
+          position: absolute;
+          background-image: url('');
+          top: 35%;
+          right: 5%;
+          }
+
+          .slick-list {
+              width: 100%!important;
+              }
+              .slick-initialized {
+                  overflow: hidden;
+              }
+              
+              .slick-dots li button{
+              font-size: 0px;
+              border: 5px solid orange;
+              width: 26px;
+              height: 26px;
+              background: transparent;
+              border-radius: 50%;
+              cursor: pointer;
+              }
+              
+              .slick-dots{
+              margin: 0 auto;
+              width: 50%;
+              position: absolute;
+              left: 50%;
+              top: 285px;
+              }
+              
+              li.slick-active button{
+              background: purple;
+              }
+              
+              .slick-dots li{
+              display: inline-block;
+              padding-left:10px ;
+              }
